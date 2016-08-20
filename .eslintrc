@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "rules": {
+    "import/no-unresolved": 0,
+    "import/no-extraneous-dependencies": 0,
+//    "react/jsx-boolean-value": 0,
+    "max-len": ["error", { "code": 140, "tabWidth": 2 }],
+    "space-before-function-paren": ["error", "never"],
+//    "no-trailing-spaces": ["error", { "skipBlankLines": true }],
+//    "padded-blocks": [0, "always"],
+    "brace-style": [2, "stroustrup", { "allowSingleLine": false }]
+  }
+}

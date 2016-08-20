@@ -1,0 +1,21 @@
+{
+  "presets": ["es2015", "stage-1", "react"],
+  "plugins": ["transform-runtime", "transform-decorators-legacy"],
+  "env": {
+    "test": {
+      "plugins": [
+        ["babel-plugin-webpack-alias",
+          {
+            "_containers": ".src/app/containers",
+            "_components": ".src/app/components",
+            "_constants": ".src/app/constants",
+            "_reducers": ".src/app/reducers",
+            "_store": ".src/app/store",
+            "_routes": ".src/app/routes",
+            "_actions": ".src/app/actions",
+          }
+        ]
+      ]
+    }
+  }
+}
